@@ -4,4 +4,10 @@
 
 
 
-// promise:
+// promise: pendling 
+//        : rejected
+//        : fulfilled
+
+// res.json -client 
+
+
