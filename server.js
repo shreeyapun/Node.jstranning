@@ -51,7 +51,6 @@
 //   console.log("Server running...");
 // });
 
-
 // Basic Routing in Express.js
 // const express = require("express");
 // const app = express();
@@ -197,3 +196,14 @@ app.get("/user/:id",(req,res)=>{
 app.listen(5000,()=>{
   console.log("server running on http://localhost:5000");
 });
+
+// middleware inn expressJS
+// middleware= a function that runs between request and response
+// used for :logging , authentication,validation,parsing,errors etc
+
+// /type of middleware
+// 1. application level middleware: run for every request in the whole app.
+// 2.  custom middleware : create your own function to perform some task
+// 3. route-level and app-level middleware: run only for specific route (not global)
+// 4. error-handling middleware : Catch error in your app and handle in one place
+
