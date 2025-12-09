@@ -69,8 +69,6 @@
 // });
 
 
-
-
 // Middleware in Express.js
 
 // Middleware functions are functions that have access to the request object (req),
@@ -179,23 +177,23 @@
 // advanced routing in expressJS
 // ADVANCED ROUTING meaans creating cleaner, modular, and more flexible routes using route
 // parameters,query params, and express .routers();
-const express= require("express");
-const app =express();
-// parse JSon ( not needed for this route but good practice)
-app.use(express.json());
+// const express= require("express");
+// const app =express();
+// // parse JSon ( not needed for this route but good practice)
+// app.use(express.json());
 
 
 
-// route parameter example
-app.get("/user/:id",(req,res)=>{
-  const userId=req.params.id;
-  res.send(`user id  requested:${userId}`);
-});
+// // route parameter example
+// app.get("/user/:id",(req,res)=>{
+//   const userId=req.params.id;
+//   res.send(`user id  requested:${userId}`);
+// });
 
-// start server
-app.listen(5000,()=>{
-  console.log("server running on http://localhost:5000");
-});
+// // start server
+// app.listen(5000,()=>{
+//   console.log("server running on http://localhost:5000");
+// });
 
 // middleware inn expressJS
 // middleware= a function that runs between request and response
@@ -214,3 +212,24 @@ app.listen(5000,()=>{
 // moss
 // brocode
  
+
+  let a =10;
+  const  b =20;
+  var c = 30;
+
+function test (){
+  let a =10;
+  const  b =20;
+  var c = 30;
+}
+ test();
+ console.log(a);
+ console.log(b);
+ console.log(c);
+
+
+
+
+
+
+
