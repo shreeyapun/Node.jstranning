@@ -1,13 +1,29 @@
 // await : run first 
 // async:wait until await run .
 
-
-
-
 // promise: pendling 
 //        : rejected
 //        : fulfilled
 
 // res.json -client 
 
+// finally: error or not always run
+// throw: error in catch
+// try :possibility of error in the future.
 
+// quary params:
+
+
+// STD: get and post 
+//  event handling: add.eventlistener
+// middlewarre:login etc 
+
+
+// get : server bata line
+// post : server lai dine
+
+
+//  DOM( document object model) 
+// document banaunxa treelike st. acc.
+// treelike of webpage.
+// 
