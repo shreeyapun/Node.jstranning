@@ -211,18 +211,53 @@
 // brocode
  
 
-  let a =10;
-  const  b =20;
-  var c = 30;
+//   let a =10;
+//   const  b =20;
+//   var c = 30;
 
-function test (){
-  let a =10;
-  const  b =20;
-  var c = 30;
-}
- test();
- console.log(a);
- console.log(b);
- console.log(c);
+// function test (){
+//   let a =10;
+//   const  b =20;
+//   var c = 30;
+// }
+//  test();
+//  console.log(a);
+//  console.log(b);
+//  console.log(c);
 
+
+// const express= require("express");
+// const app=express();
+
+// // simple middleware
+// app.use((req,res,next)=>{
+//     console.log("middleware works!");
+//     next();
+// });
+//  app.get("/",(req,res)=>{
+//     res.send("hello from express!");
+//  });
+//  app.listen(5000,()=>{
+//     console.log("server started at http://localhost:5000");
+//  });  
+
+const express = require("express");
+const app= express();
+// custom middleware
+ function middleware(req,res,next){
+   console.log("this is my middleware");
+   next();
+ }
+ app.use(middleware);
+ app.get("/",(req,res)=>{
+   res.send("home page");
+ })
+ app.listen(5000,()=>{
+   console.log("server started at http://localhost:5000");
+ });
  
+
+
+
+
+
