@@ -241,23 +241,57 @@
 //     console.log("server started at http://localhost:5000");
 //  });  
 
-const express = require("express");
-const app= express();
-// custom middleware
- function middleware(req,res,next){
-   console.log("this is my middleware");
-   next();
- }
- app.use(middleware);
- app.get("/",(req,res)=>{
-   res.send("home page");
- })
- app.listen(5000,()=>{
-   console.log("server started at http://localhost:5000");
- });
- 
+// const express = require("express");
+// const app= express();
+// // custom middleware
+//  function middleware(req,res,next){
+//    console.log("this is my middleware");
+//    next();
+//  }
+//  app.use(middleware);
+//  app.get("/",(req,res)=>{
+//    res.send("home page");
+//  })
+//  app.listen(5000,()=>{
+//    console.log("server started at http://localhost:5000");
+//  });
+
+//  Error handling middleware
+// error handling middleware is used to catch and handle errors in express
+// so that server doesnot crash and the user get a proper message.
+
+// uses
+// prevent server from crashing when an error comes
+// sends a proper and user-friendly error message to the client
+// handles all error from one central place
+// helps in debugging by loging error details
+// improves application security by hiding internal errors.
+// allowas sending correct HTTP status codes(400,500,etc)
+// commonly used HTTTP status codes:
+// 200:ok -request successful
+// 201:created-resource created successfully
+// 400:bad request-invalid request
+// 401:unauthorized-authentization required
+// 403:forbidden-access denied
+// 404:not found -resource not found
+// 500:internal server error-
 
 
 
+// example of error handling middleware
+const express = require ("express");
+const app=express();
 
+app.get("/",(req,res,next)=>{
+  const error =new Error ("something went wrong");
+  next(error);
+});
+
+app.use((err,req,res,next)=>{
+  console.log("error:",err.message);
+  res.send("error occurred");
+});
+app.listen(5000,()=>{
+  console.log("server started at http://localhost:5000");
+});
 
