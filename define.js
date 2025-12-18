@@ -21,6 +21,10 @@
 
 // get : server bata line
 // post : server lai dine
+// put
+// update
+// delete
+
 
 
 //  DOM( document object model) 
