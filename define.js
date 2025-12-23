@@ -21,9 +21,9 @@
 
 // get : server bata line
 // post : server lai dine
-// put
-// update
-// delete
+// put:
+// update:append: txt file ma new add hunxa
+// delete:file deleted :"crud.txt file will be deleted"
 
 
 
