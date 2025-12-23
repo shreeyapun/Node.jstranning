@@ -14,8 +14,6 @@
 // console.log(readFile.toString());
 // console.log(readFile);
 
-
-
 // const fs =require("fs");
 // const path =require("path");
 // const fileName="crud.txt";
@@ -24,6 +22,4 @@
 
 // const updateFile =fs.unlinkSync(filePath,"hehe","utf-8");
 // console.log(updateFile);
-
-
-// fs.writeFile(filePath,Data,callback)
+// fs.writeFile(filePath,Data,callback);                 
