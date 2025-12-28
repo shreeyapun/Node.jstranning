@@ -43,3 +43,23 @@
 
 // express:node ko framework;
 
+// sql: data sit in tabular form(quary lang.)(postcase)
+// nosql: data sit in tree form or xitrera basxa(mongodb)( completely sql use hunna ..)
+
+
+// user baneko collection/model(database) 
+// scheme vaneko username email haru pailai define garne  like string. (like a blueprint)
+// name,username etc = .doc(document);
+
+
+// mongo:database(asch)
+// MONGOoSe: translater between node.js and mongodb.
+
+
+// mongoDB atlas: cloud(powerful data storage) ma strore hunxa ani offlina online ma pani kam garxa.
+// compas: only online no offile and locally.
+
+
+
+// Database: collection of related data. 2type
+// id 24 char. ko banxa
